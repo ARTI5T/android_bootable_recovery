@@ -3542,7 +3542,7 @@ void MultiROM::executeCacheScripts()
 
 		if(type & MASK_ANDROID)
 		{
-			if(stat((path + SCRIPT_FILE_CACHE).c_str(), &info) < 0)
+			if(stat((path + "/cache/recovery/openrecoveryscript").c_str(), &info) < 0)
 				continue;
 
 			if((time_t)info.st_mtime > script.mtime)
