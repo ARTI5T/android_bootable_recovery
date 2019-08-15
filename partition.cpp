@@ -2454,6 +2454,7 @@ bool TWPartition::Wipe_F2FS() {
 			sprintf(temp, "%llu", Block_Count);
 			command += " ";
 			command += temp;
+		}
 		// First determine if we have the old mkfs.f2fs that uses "-r reserved_bytes"
 		// or the new mkfs.f2fs that expects the number of sectors as the optional last argument
 		// Note: some 7.1 trees have the old and some have the new.
