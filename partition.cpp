@@ -62,6 +62,7 @@ extern "C" {
 #ifdef TW_INCLUDE_CRYPTO
 	#include "gpt/gpt.h"
 #endif
+}
 
 #include <selinux/selinux.h>
 #include <selinux/label.h>
